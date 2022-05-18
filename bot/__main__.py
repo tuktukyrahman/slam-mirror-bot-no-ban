@@ -18,7 +18,7 @@ from .helper.ext_utils.bot_utils import get_readable_file_size, get_readable_tim
 from .helper.telegram_helper.filters import CustomFilters
 from .modules import authorize, list, cancel_mirror, mirror_status, mirror, clone, watch, shell, eval, anime, stickers, search, delete, speedtest, usage
 
-now=datetime.now(pytz.timezone('Asia/Kolkata'))
+now=datetime.now(pytz.timezone('Asia/Dhaka'))
 
 
 @run_async
@@ -66,8 +66,8 @@ def chat_list(update, context):
 @run_async
 def repo(update, context):
     button = [
-    [InlineKeyboardButton("Repo", url=f"https://github.com/NamasteIndia/slam-mirror-bot")],
-    [InlineKeyboardButton("Support Group", url=f"https://t.me/mirrorupdatesnnews")]]
+    [InlineKeyboardButton("Repo", url=f"https://github.com/itspriyo/priyo-mirror-bot")],
+    [InlineKeyboardButton("Support Group", url=f"https://t.me/priyo_mirror")]]
     reply_markup = InlineKeyboardMarkup(button)
     update.effective_message.reply_photo(IMAGE_URL, reply_markup=reply_markup)
 
